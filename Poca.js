@@ -8,7 +8,7 @@ while (gameover === false && alive === false) {
 		case "smoothest":
 		case "the smoothest":
 		case "the smoothest course":
-			alert("You can't tell from your location which course is the smoothest.");
+			alert("You cannot tell from your location which course is the smoothest.");
 			break;
 		case "left":
 			alert("You choose to continue to the left. Strangely it is a circle that loops back around to your starting point.");
@@ -19,17 +19,16 @@ while (gameover === false && alive === false) {
 			alert("You choose to continue straight ahead. Uh-oh! The river has picked up and you are heading straight for a huge waterfall.");
 			var turn = confirm("Do you want to try to avoid it? Click OK for yes or CANCEL to take your chances.");
 			if (turn) {
-				alert("You pull aside like a pansy.");
+				alert("You pull aside like a pansy. Are you Percy or something?");
 				gameover = true;
 				break;
 			}
-			alert("You decide to be brave and take your chances. After all, it's just a waterfall. You sing happily as you plunge to death.");
-			alert("...");
+			alert("You decide to be brave and take your chances. After all, it's just a waterfall. You sing happily as you plunge to your death.");
 			alert("Just kidding. You're Pocahontas. You're completely fine!");
 			alive = true;
 			break;
 		case "right":
-			alert("You choose to continue right. The river is calm and pretty boring. Too bad there wasn't a waterfall or anything exciting.");
+			alert("You choose to continue to the right. There's some wind and color and stuff, but nothing worth breaking into song about.");
 			alive = true;
 			break;
 		default:
@@ -41,7 +40,7 @@ if (gameover === false) {
 	alert("You come to the end of the river and exit your canoe.");
 	alert("You notice some footsteps of a stranger and decide to follow them.");
 	while (gameover === false && smith === false) {
-		var marry = prompt("Waiting up ahead for you is Kocoum and John Rolfe. Who will you decide to marry?").toLowerCase();
+		var marry = prompt("Oh no! Up ahead are Kocoum and John Rolfe. And they're waiting for an answer. Who will you decide to marry?").toLowerCase();
 		switch (marry) {
 			case "kocoum":
 			case "kokoum":
@@ -51,14 +50,13 @@ if (gameover === false) {
 			case "john rolfe":
 			case "john":
 			case "rolfe":
-				alert("You decide to marry John Rolfe. WHY WOULD YOU CHOOSE THIS?");
+				alert("You decide to marry John Rolfe. WHY WOULD ANYONE CHOOSE THIS?");
 				gameover = true;
 				break;
 			case "john smith":
 			case "smith":
-				alert("John Smith is not a choice here.");
+				alert("I would choose John Smith too, but he's not here.");
 				alert("Suddenly you hear rustling in the nearby bushes.");
-				alert("IT'S JOHN SMITH!");
 				smith = true;
 				break;
 			case "neither":
@@ -66,7 +64,6 @@ if (gameover === false) {
 			case "no one":
 			case "noone":
 				alert("You can't possibly marry Kocoum or John Rolfe. Suddenly, you hear rusting in the nearby bushes.");
-				alert("IT'S JOHN SMITH!");
 				smith = true;
 				break;
 			default:
@@ -80,6 +77,7 @@ if (gameover === true) {
 }
 
 if (smith === true) {
+	alert("IT'S JOHN SMITH!");
 	alert("YOU WIN!");
 	alert("..........");
 	alert("Until Pocahontas 2 where everything is ruined!");
